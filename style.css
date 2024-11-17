@@ -1,0 +1,199 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(assets/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
+}
+
+
+.gridcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutsection {
+ background-color: teal;
+
+padding: 20px;
+align-items: center;
+font-family: roboto;
+display: flex;
+}
+
+
+
+.aboutsection h2 {
+    font-family: playfair;
+}
+
+.aboutsection img {
+    justify-self: flex-end;
+}
+.abouticons {
+    margin-left: auto;
+}
+
+.textdiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 22rem;
+    justify-self: flex-start;
+    padding-left: 10px;
+    background-color: white;
+    box-shadow: 6px 5px 5px lightgray;
+
+}
+.textdiv * {
+    background-color: white;
+    color: black;
+ 
+}
+
+img{
+width: 25rem;
+}
+
+.exampleprojects {
+    grid-area: middle;
+    padding: 1rem;
+
+}
+
+.exampleprojects * {
+    background-color: white;
+    color: black;
+}
+
+.cardcontainer {
+
+
+display: flex;
+flex-wrap: wrap;
+}
+
+.projectcard {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    color: black;
+    display: grid;
+    box-shadow: 10px 5px 5px lightgray;
+    font-family: roboto;
+    
+}
+
+.cardtop {
+    background-color: black;
+    color: white;text-align: center;
+    font-family: playfair;
+}
+
+/* .cardbottom {
+
+}
+
+
+
+.carddescription {
+
+} */
+
+.cardnamewithicons {
+    display: flex;
+        justify-content: space-between;
+}
+
+
+
+.contactsection {
+    background-color: teal;
+    padding: 2rem;
+
+grid-area: bottom;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+    'contactheader image'
+    'contacttext image'
+    'contactaddress image'
+    'contactphone image'
+    'contactemail image'
+    'contacticons image'
+    '. image'
+    ;
+display: grid;
+font-family: roboto;
+}
+
+.bottomimage {
+    display: flex;
+    flex-direction: column;
+    grid-area:image
+
+}
+
+.contactheader {
+    grid-area: contactheader;
+    font-family: playfair;
+}
+
+.contacttext {
+    grid-area: contacttext
+}
+
+.contactaddress {
+    grid-area:contactaddress
+
+}
+
+.contactphone {
+    grid-area:contactphone
+
+}
+
+.contactemail {
+    grid-area:contactemail
+
+}
+
+.contacticons {
+    grid-area:contacticons
+
+
+}
+
+.svgicons {
+    width: 25px;
+
+}
+
+.phonesvg, .emailsvg {
+    fill: white;
+    filter: invert(1); 
+}
+
+@media (max-width: 810px) {
+    .aboutsection {
+        flex-direction: column;
+  }
+  .contactsection {
+
+    display: flex;
+    flex-direction: column;
+}
+  
+}
+
+
+
